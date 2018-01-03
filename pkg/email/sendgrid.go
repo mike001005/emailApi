@@ -3,9 +3,10 @@ package email
 import (
 	"github.com/sendgrid/rest"
 
+	"os"
+
 	"github.com/sendgrid/sendgrid-go"
 	"github.com/sendgrid/sendgrid-go/helpers/mail"
-	"os"
 )
 
 // SendGridEmail Sends emails using the sendGrid  email api

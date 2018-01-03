@@ -1,8 +1,9 @@
 package email
 
 import (
-	"gopkg.in/mailgun/mailgun-go.v1"
 	"os"
+
+	"gopkg.in/mailgun/mailgun-go.v1"
 )
 
 // SendSimpleMessage Sends an email using Mail gun api
