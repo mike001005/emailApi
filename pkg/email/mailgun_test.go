@@ -14,6 +14,5 @@ func TestSendSimpleMessage(t *testing.T) {
 		fmt.Sprintf("response: %s", response)
 		fmt.Sprintf("id: %s", id)
 		t.Errorf("error: %e", err)
-
 	}
 }
