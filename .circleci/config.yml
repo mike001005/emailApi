@@ -7,7 +7,7 @@ jobs:
     docker:
       # specify the version
       - image: circleci/golang:1.8
-    working_directory: /go/src/github.com/mike001005/emailAPi
+    working_directory: /go/src/github.com/mike001005/emailApi
 
     steps:
       - checkout
