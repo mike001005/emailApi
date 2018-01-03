@@ -63,6 +63,7 @@ docker run --publish 6060:8081 --name email --rm email
 ```
 Option 2: Vars not set
 ```bash
+docker build -t email .
 docker run --publish 6060:8081 --name email --rm email -e MG_API_KEY="xxxxx" -e MG_DOMAIN="xxxxx" -e MG_PUBLIC_API_KEY="xxxxx" -e SENDGRID_API_KEY="xxxxx"
 ```
 
