@@ -1,14 +1,8 @@
 {
   "senders": [
-    "example@example.com",
-    "example@example.com",
-    "example@example.com",
-    "example@example.com"
+    "robot@fair.com"
   ],
   "receivers": [
-    "example@example.com",
-    "example@example.com",
-    "example@example.com",
-    "example@example.com"
+    "m_norris30!%%%%@yahoo.com"
   ]
 }
