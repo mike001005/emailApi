@@ -4,7 +4,7 @@ package main
 import (
 	"fmt"
 	"net/http"
-	"github.com/dollarshaveclub/email/pkg/api"
+	"github.com/mike001005/emailApi/pkg/api"
 
 )
 
