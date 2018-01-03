@@ -7,7 +7,6 @@ import (
 
 func TestSendSimpleMessage(t *testing.T) {
 
-
 	testSend := "robot@me.com"
 	testEmail := "m_norris30@yahoo.com"
 	response, id, err := SendSimpleMessage(testSend, testEmail)
