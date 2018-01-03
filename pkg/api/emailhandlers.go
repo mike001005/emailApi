@@ -7,7 +7,6 @@ import (
 	"fmt"
 
 	"github.com/mike001005/emailApi/pkg/email"
-
 )
 
 // Emails are the arguments for Emails
