@@ -5,8 +5,8 @@ import (
 	"net/http"
 
 	"fmt"
-	"github.com/mike001005/emailApi/pkg/email"
 
+	"github.com/mike001005/emailApi/pkg/email"
 )
 
 // Emails are the arguments for Emails
