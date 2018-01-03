@@ -1,10 +1,14 @@
 {
   "senders": [
-    "robot@fair.com",
-    "fairRobot@donotreply.com"
+    "example@example.com",
+    "example@example.com",
+    "example@example.com",
+    "example@example.com"
   ],
   "receivers": [
-    "m_norris30@yahoo.com",
-    "desert_fox64@hotmail.com"
+    "example@example.com",
+    "example@example.com",
+    "example@example.com",
+    "example@example.com"
   ]
 }
