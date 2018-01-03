@@ -18,11 +18,13 @@ git@github.com:mike001005/emailApi.git
 ## Edit jsonFile
 vim:
 ```bash
+cd go/src/github.com/.../emailApi
 vim emails.json
 ```
 or
 nano:
 ```bash
+cd go/src/github.com/.../emailApi
 nano emails.json
 ```
 Edit Json file:
@@ -66,7 +68,8 @@ docker run --publish 6060:8081 --name email --rm email
 ## Call Api
 Open new terminal
 ```bash
+cd go/src/github.com/.../emailApi
 curl -i -d @emails.json http://localhost:6060/mailgun
-curl -i -d @emails.json http://localhost:6060/sendgird
+curl -i -d @emails.json http://localhost:6060/sendgrid
 ```
 
