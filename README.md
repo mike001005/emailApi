@@ -23,7 +23,7 @@ vim emails.json
 or
 nano:
 ```bash
-nano email.json
+nano emails.json
 ```
 Edit Json file:
 ```json
