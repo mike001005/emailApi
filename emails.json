@@ -1,0 +1,10 @@
+{
+  "senders": [
+    "robot@fair.com",
+    "fairRobot@donotreply.com"
+  ],
+  "receivers": [
+    "m_norris30@yahoo.com",
+    "desert_fox64@hotmail.com"
+  ]
+}
