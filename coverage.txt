@@ -1,1 +1,5 @@
 
+mode: atomic
+github.com/dollarshaveclub/email/pkg/email/mailgun.go:8.77,13.2 4 1
+github.com/dollarshaveclub/email/pkg/email/sendgrid.go:11.82,22.2 9 1
+
