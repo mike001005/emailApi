@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestSendGridEmailError(t *testing.T) {
+func TestSendGridEmail(t *testing.T) {
 	testSend := "robot@me.com"
 	testEmail := "m_norris30@yahoo.com"
 
@@ -15,5 +15,3 @@ func TestSendGridEmailError(t *testing.T) {
 		t.Errorf("error: %e", err)
 	}
 }
-
-
