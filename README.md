@@ -44,29 +44,26 @@ Edit Json file:
 ```
 
 ## Set Env Vars
-Option 1: Export Vars in terminal
+Option 1: Set Var in 
 ```bash
-export MG_API_KEY=your_MG_API_KEY
-export MG_DOMAIN=your_Mg_DOMAIN
-export MG_PUBLIC_API_KEY=your_PUBLIC_KEY
-export SENDGRID_API_KEY=your_API_KEY
+vim Dockerfile
 ```
-Option 2: set vars in docker with -e --env
+or 
 ```bash
-docker run --publish 6060:8081 --name email --rm email -e MG_API_KEY="xxxxx" -e MG_DOMAIN="xxxxx" -e MG_PUBLIC_API_KEY="xxxxx" -e SENDGRID_API_KEY="xxxxx"
+nano Dockerfile
+```
+Edit Env Var in DockerFile:
+```Dockerfile
+MG_API_KEY=your_MG_API_KEY
+MG_DOMAIN=your_Mg_DOMAIN
+MG_PUBLIC_API_KEY=your_PUBLIC_KEY
+SENDGRID_API_KEY=your_API_KEY
 ```
 ## Docker
-Option 1:
 ```bash
 docker build -t email .
 docker run --publish 6060:8081 --name email --rm email
 ```
-Option 2: Vars not set
-```bash
-docker build -t email .
-docker run --publish 6060:8081 --name email --rm email -e MG_API_KEY="xxxxx" -e MG_DOMAIN="xxxxx" -e MG_PUBLIC_API_KEY="xxxxx" -e SENDGRID_API_KEY="xxxxx"
-```
-
 ## Call Api
 Open new terminal
 ```bash
