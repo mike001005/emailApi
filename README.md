@@ -44,7 +44,6 @@ Edit Json file:
 ```
 
 ## Set Env Vars
-Option 1: Set Var in 
 ```bash
 vim Dockerfile
 ```
