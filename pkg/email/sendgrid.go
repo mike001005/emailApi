@@ -17,7 +17,7 @@ func SendGridEmail(fromAddress string, toAddress string) (*rest.Response, error)
 	plainTextContent := "and easy to do anywhere, even with Go"
 	htmlContent := "<strong>and easy to do anywhere, even with Go</strong>"
 	message := mail.NewSingleEmail(from, subject, to, plainTextContent, htmlContent)
-	client := sendgrid.NewSendClient(os.Getenv("sendGridAPIKey"))
+	client := sendgrid.NewSendClient(os.Getenv("SENDGRID_API_KEY"))
 	response, err := client.Send(message)
 
 	return response, err
