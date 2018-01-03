@@ -9,6 +9,7 @@ go get golang.org/x/tools/cmd/goimports
 go get -v -u github.com/gorilla/mux
 go get -v -u github.com/sendgrid/sendgrid-go
 go get -v -u gopkg.in/mailgun/mailgun-go.v1
+go get -v -u github.com/badoux/checkmail
 
 fgt goimports -l ./pkg/*
 fgt golint ./pkg/...

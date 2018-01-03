@@ -6,6 +6,7 @@ import (
 
 	"fmt"
 
+	"github.com/badoux/checkmail"
 	"github.com/mike001005/emailApi/pkg/email"
 )
 
@@ -26,7 +27,19 @@ func HandleMailGun(w http.ResponseWriter, r *http.Request) {
 	}
 
 	for z := 0; z < len(data.Senders); z++ {
+
+		err := checkmail.ValidateFormat(data.Senders[z])
+		if err != nil {
+			http.Error(w, "invalid email", 400)
+			return
+		}
+
 		for i := 0; i < len(data.Receivers); i++ {
+			err := checkmail.ValidateFormat(data.Receivers[i])
+			if err != nil {
+				http.Error(w, "invalid email", 400)
+				return
+			}
 			fmt.Println("Sending email with mailgun...")
 			fmt.Sprintf("%s: %s", data.Senders[z], data.Receivers[i])
 			response, id, err := email.SendSimpleMessage(data.Senders[z], data.Receivers[i])
@@ -61,7 +74,19 @@ func HandleSendGrid(w http.ResponseWriter, r *http.Request) {
 	}
 
 	for z := 0; z < len(data.Senders); z++ {
+
+		err := checkmail.ValidateFormat(data.Senders[z])
+		if err != nil {
+			http.Error(w, "invalid email", 400)
+			return
+		}
+
 		for i := 0; i < len(data.Receivers); i++ {
+			err := checkmail.ValidateFormat(data.Receivers[i])
+			if err != nil {
+				http.Error(w, "invalid email", 400)
+				return
+			}
 			fmt.Println("sending email with sendgrid..")
 			sgResponse, err := email.SendGridEmail(data.Senders[z], data.Receivers[i])
 			if err != nil || sgResponse.StatusCode > 400 {
