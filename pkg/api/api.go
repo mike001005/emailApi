@@ -8,8 +8,7 @@ import (
 func Handlers() *mux.Router {
 	r := mux.NewRouter()
 
-	r.HandleFunc("/mailgun", HandleMailGun)
-	r.HandleFunc("/sendgrid", HandleSendGrid)
+	r.HandleFunc("/send", Send)
 
 	return r
 }

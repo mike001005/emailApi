@@ -2,10 +2,10 @@
 # and a workspace (GOPATH) configured at /go.
 FROM golang
 
-ENV MG_API_KEY=YOUR_API_KEY
-ENV MG_DOMAIN=YOU_DOMAIN
-ENV MG_PUBLIC_API_KEY=YOUR_PUBLIC_KEY
-ENV SENDGRID_API_KEY=YOU_API_KEY
+ENV MG_API_KEY=YOUR_KEY
+ENV MG_DOMAIN=YOUR_KEY
+ENV MG_PUBLIC_API_KEY=YOUR_KEY
+ENV SENDGRID_API_KEY=YOUR_KEY
 
 RUN go get -v -u github.com/gorilla/mux
 RUN go get -v -u github.com/sendgrid/sendgrid-go

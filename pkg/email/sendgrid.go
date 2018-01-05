@@ -10,12 +10,13 @@ import (
 )
 
 // SendGridEmail Sends emails using the sendGrid  email api
-func SendGridEmail(fromAddress string, toAddress string) (*rest.Response, error) {
+// "<strong>and easy to do anywhere, even with Go</strong>"
+func SendGridEmail(fromAddress string, toAddress string, mailSubject string, mailMessage string, html string) (*rest.Response, error) {
 	from := mail.NewEmail("Example User", fromAddress)
-	subject := "Sending with SendGrid is Fun"
+	subject := mailSubject
 	to := mail.NewEmail("Example User", toAddress)
-	plainTextContent := "and easy to do anywhere, even with Go"
-	htmlContent := "<strong>and easy to do anywhere, even with Go</strong>"
+	plainTextContent := mailMessage
+	htmlContent := html
 	message := mail.NewSingleEmail(from, subject, to, plainTextContent, htmlContent)
 	client := sendgrid.NewSendClient(os.Getenv("SENDGRID_API_KEY"))
 	response, err := client.Send(message)

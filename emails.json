@@ -1,14 +1,27 @@
 {
-  "senders": [
-    "example@example.com",
-    "example@example.com",
-    "example@example.com",
-    "example@example.com"
-  ],
-  "receivers": [
-    "example@example.com",
-    "example@example.com",
-    "example@example.com",
-    "example@example.com"
+  "emails":[
+    {
+    "from":"example@me.com",
+    "to":"example@me.com",
+    "subject":"HI!!!",
+    "body": "Hello",
+    "html": "<strong> HELLO!!! </strong>"
+  },{
+      "from":"example@me.com",
+      "to":"example@me.com",
+      "subject":"HI!!!",
+      "body": "Hello"
+  },{
+      "from":"example@me.com",
+      "to":"example@me.com",
+      "subject":"HI!!!",
+      "body": "Hello"
+    },{
+      "from":"example@me.com",
+      "to":"example@me.com",
+      "subject":"HI!!!",
+      "body": "Hello"
+    }
   ]
+
 }
