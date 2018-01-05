@@ -30,18 +30,31 @@ nano emails.json
 Edit Json file:
 ```json
 {
-  "senders": [
-    "example@example.com",
-    "example@example.com",
-    "example@example.com",
-    "example@example.com"
-  ],
-  "receivers": [
-    "example@example.com",
-    "example@example.com",
-    "example@example.com",
-    "example@example.com"
+  "emails":[
+    {
+    "from":"example@me.com",
+    "to":"example@me.com",
+    "subject":"HI!!!",
+    "body": "Hello",
+    "html": "<strong> HELLO!!! </strong>"
+  },{
+      "from":"example@me.com",
+      "to":"example@me.com",
+      "subject":"HI!!!",
+      "body": "Hello"
+  },{
+      "from":"example@me.com",
+      "to":"example@me.com",
+      "subject":"HI!!!",
+      "body": "Hello"
+    },{
+      "from":"example@me.com",
+      "to":"example@me.com",
+      "subject":"HI!!!",
+      "body": "Hello"
+    }
   ]
+
 }
 ```
 
@@ -69,7 +82,6 @@ docker run --publish 6060:8081 --name email --rm email
 Open new terminal
 ```bash
 cd go/src/github.com/.../emailApi
-curl -i -d @emails.json http://localhost:6060/mailgun
-curl -i -d @emails.json http://localhost:6060/sendgrid
+curl -i -d @emails.json http://localhost:6060/send
 ```
 
